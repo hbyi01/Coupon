@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: CouponMerchants
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/coupon_system?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: yhb0522!!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    open-in-view: false
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: coupon
+    listener:
+      concurrency: 4
+
+  server:
+    port: 9527
+
+  logging:
+    level:
+      root: info
+    file: coupon-merchants.log
