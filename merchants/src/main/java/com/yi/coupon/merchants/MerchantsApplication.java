@@ -9,7 +9,7 @@ public class MerchantsApplication {
     public static void main(String[] args) {
         SpringApplication.run(MerchantsApplication.class, args);
         System.out.println("123");
-        System.out.println("conflict merge");
+        System.out.println("conflict merge1");
     }
 
 }
